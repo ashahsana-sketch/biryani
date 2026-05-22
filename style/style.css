@@ -3,14 +3,14 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fffaf0; /* Warm white background */
+    background-color: #fffaf0;
     max-width: 800px; 
     margin: 0 auto; 
     padding: 20px;
     }
 h1 
     {
-    color: #d35400; /* Spicy Orange */
+    color: #d35400; 
     text-align: center;
     font-size: 3em;
     border-top: 2px solid #d35400;
@@ -51,7 +51,7 @@ li {
     {
     font-size: 1.5em;
     font-weight: bold;
-    color: #7b1fa2; /* Brown/Plum color */
+    color: #7b1fa2;
     margin-top: 30px;
     } 
 
