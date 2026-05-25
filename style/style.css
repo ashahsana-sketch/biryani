@@ -1,3 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 12px;
+}
+  /* .title 
+  {
+  font-size: 28px;
+  margin: 0;
+} */
+
+h1 
+    {
+    color: #d35400; 
+    text-align: center;
+    font-size: 3em;
+    border-top: 2px solid #d35400;
+    border-bottom: 2px solid #d35400;
+    padding-bottom: 10px;
+    }
+
+.content-layout {
+    display: flex;
+    gap: 20px;
+   }
+.main-content {
+    flex: 3;
+   }
+aside {
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
 body 
     {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,15 +44,6 @@ body
     max-width: 800px; 
     margin: 0 auto; 
     padding: 20px;
-    }
-h1 
-    {
-    color: #d35400; 
-    text-align: center;
-    font-size: 3em;
-    border-top: 2px solid #d35400;
-    border-bottom: 2px solid #d35400;
-    padding-bottom: 10px;
     }
 
 .subtitle 
@@ -91,7 +119,7 @@ nav a:hover {
     border-radius: 50px;   /* 🔥 makes oval shape */
 }
 .mycontainer {
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: left;
   padding: 20px;    
@@ -99,3 +127,59 @@ background-color: #b09c96;
  overflow: hidden;
   border: 2px solid #210101;
 }
+.container_for_recepie {
+  display: flex;
+  color : black;
+  align-items: left;
+  padding: 5px;    
+background-color: #b09c96;   
+ overflow: hidden;
+  border: 2px solid #210101;
+  overflow: hidden;
+}
+.box{
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+    }
+.box-recpie{
+    border: 2px solid #210101;
+  margin: 2px;
+object-fit: cover;
+    }
+/* video display CSS */
+.video-box {
+  width: 320px;
+  float: left;
+  margin-right: 20px;
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  overflow: hidden;
+}
+/* here is viseo CSS end */
+/* 
+for form submission */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+span
+    { 
+        padding: 5px 10px ;
+        background-color:#4566c2;
+        color: red;
+        border-radius: 5px;
+        border: 1px solid #210101;
+    font-size: 0.9em;
+    }
