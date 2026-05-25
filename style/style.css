@@ -2,7 +2,7 @@ body
     {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #de8a8a;
     background-color: #fffaf0;
     max-width: 800px; 
     margin: 0 auto; 
@@ -30,7 +30,7 @@ ul, ol
     {
     font-size: 1.1em;
     color: #4a148c; /* Deep Purple */
-    background: #ffffff;
+    background: #cbe2ea;
     padding: 25px 50px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -38,12 +38,12 @@ ul, ol
 li {
     margin-bottom: 10px;
     }
-    .gallery 
-{
-    display: flex;
+.gallery-image
+    {
     gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    display:flex;
     margin-top: 20px;
    }
 
@@ -55,24 +55,17 @@ li {
     margin-top: 30px;
     } 
 
-.main-img 
+.main-image 
     {
-    width: 5%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    }
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-top: 20px; 
+    } 
 
-.gallery img {
-    width: 250px;
-    height: 200px;
-    object-fit: cover; 
-    border-radius: 10px;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
 nav {
     display: flex;
     gap: 10px; /* space between buttons */
@@ -90,21 +83,19 @@ nav a {
 nav a:hover {
     background-color: #0056b3;
 }
+.oval-nav {
+    display: flex;
+    gap: 10px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 50px;   /* 🔥 makes oval shape */
+}
 .mycontainer {
 display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  align-items: left;
+  padding: 20px;    
 background-color: #b09c96;   
  overflow: hidden;
   border: 2px solid #210101;
 }
-/* .sidebar 
-    {
-    width: 200px;
-    height: 100vh;
-    background: gray;
-    display: flex;
-    flex-direction: column;
-    } */
