@@ -1,5 +1,136 @@
+:root {
+
+  /* ===== COLORS ===== */
+  --primary-color: #8b0000;
+  --secondary-color: #d4a373;
+  --background-color: #f8f5f2;
+  --text-color: #333333;
+  --white: #ffffff;
+  --border-color: #cccccc;
+
+  /* ===== SPACING ===== */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-base: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 50px;
+
+  /* ===== FONT SIZES ===== */
+  --font-sm: 14px;
+  --font-base: 16px;
+  --font-md: 20px;
+  --font-lg: 28px;
+  --font-xl: 40px;
+
+  /* ===== FONT FAMILY ===== */
+  --font-main: Arial, sans-serif;
+  --font-heading: Georgia, serif;
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+
+  /* ===== SHADOWS ===== */
+  --shadow-light: 0 2px 5px rgba(0,0,0,0.1);
+  --shadow-medium: 0 4px 10px rgba(0,0,0,0.2);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s ease;
+
+  /* ===== GRID ===== */
+  --grid-gap: 15px;
+  --container-width: 1200px;
+}
+.gallery_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-gap);
+  border: 2px solid #210101;
+  align-items: stretch;
+  margin-top: calc(var(--spacing-base) * 2);
+}
+.gallery_flex_item 
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  color: #4a148c; /* Deep Purple */
+  border: 1px solid #ccc;
+  margin-bottom: calc(var(--spacing-base) * 2);
+  align-self: center;
+  gap: calc(var(--spacing-base) * 2); /* gap sets the space between flex and grid items */
+  vertical-align: center;
+}
+
+.gallery_flex_item h3 {
+  color: #640404;
+} 
+
+.gallery_flex_item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* equal height and width */
+  object-fit: cover;     /* keeps images nicely cropped */
+  flex-basis: auto;      /* prevents images from shrinking */
+}
+.gallery_grid p {
+   font-size: 1.1em;
+    color: #4a148c; /* Deep Purple */
+    background: #cbe2ea;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: justify;     /* prevents images from shrinking */
+}
+.grid_parent {
+  display:inline-grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: var(--grid-gap);
+  height: 100%;
+  align-items:top;
+  border-radius: 12px;
+  background-color: #86e08d;
+}
+.grid_child {
+    display: grid;
+    background-color: #b7aaa6;
+    border: 2px solid #210101;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+} 
+.grid_child p {
+    color: #160438; /* Deep Purple */
+    background-color:transparent
+} 
+.grid_child img {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 10px;}
+.grid_child button {
+    padding: 10px 20px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grid_child button:hover {
+    background-color: #b30042;
+}
+    
+.grid_child h3 {
+    color: #640404;
+    background: radial-gradient(circle, #ff8800, #b30042);
+    margin: 0;
+}
+
 .header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .logo {
@@ -7,11 +138,12 @@
   height: auto;
   margin-right: 12px;
 }
-  /* .title 
-  {
-  font-size: 28px;
-  margin: 0;
-} */
+.review-box{
+    margin: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 12px; 
+    color: rgb(1, 5, 8); 
+    padding: 15px;}
 
 h1 
     {
@@ -54,7 +186,7 @@ body
     color: #5d4037;
     }
     /* Lists */
-ul, ol 
+ul, ol ,p
     {
     font-size: 1.1em;
     color: #4a148c; /* Deep Purple */
@@ -62,6 +194,7 @@ ul, ol
     padding: 25px 50px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: justify;
     }
 li {
     margin-bottom: 10px;
@@ -113,20 +246,27 @@ nav a:hover {
 }
 .oval-nav {
     display: flex;
+    flex-grow: 1;
     gap: 10px;
     background-color: #007bff;
     padding: 10px 20px;
     border-radius: 50px;   /* 🔥 makes oval shape */
 }
 .mycontainer {
-  display: flex;
+  /* display: flex; flex-wrap: wrap;(text wrap kary ga) flex-grow: 1; flex-shrink:1;(keep text equally) flex-basis: 100%;(eually distribute kary ga) */
   flex-direction: column;
   align-items: left;
   padding: 20px;    
-background-color: #b09c96;   
+background-color: #86e08d;   
  overflow: hidden;
   border: 2px solid #210101;
 }
+/* mycontainer k jo direct bachy hain
+.mycontainer > * { 
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+} */
 .container_for_recepie {
   display: flex;
   color : black;
