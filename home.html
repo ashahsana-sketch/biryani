@@ -1,129 +1,126 @@
 <head>
-        <meta name="description" content="Different type of foods in pakistan">
-        <meta name="author" content="Sana Islam">
-        <meta http-equiv="refresh" content="30">  <!-- Refresh the page every 30 seconds  -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensure the page is responsive on all devices -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <title>Other food recpies in Pakistan</title>
-        <link rel="icon" href="image/smily.jpg" type="image/x-icon"/>
-        <link rel="stylesheet" href="style/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Other Food Recipes in Pakistan</h1>
-        </header>
+        
+    <meta name="description" content="Different type of foods in pakistan">
+    <meta name="author" content="Sana Islam">
+    <meta http-equiv="refresh" content="30">  <!-- Refresh the page every 30 seconds  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensure the page is responsive on all devices -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Other food recpies in Pakistan</title>
+    <link rel="icon" href="image/smily.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <!--heading of the primary webpage-->
+        <header class="main_header">
+            <img float="right" src="image/logo.jpg" alt="Logo" class="logo">
+            <h1>Cultural Food in Pakistan</h1>
+         </header>
+
+   <!-- secndary heading of the individual page -->       
+            <h2>Other Food Recipes in Pakistan</h2>
+            <p>Pakistan is known for its rich and diverse culinary heritage, offering a wide array of delicious dishes that reflect the country's cultural diversity. Some popular food recipes in Pakistan include:</p>
+        
+        <!-- flex in the grid -->
        
-<div class="gallery_grid">
-  <div class="gallery_flex_item">
-    <h3>Nihari </h3>
-    <img src="image/Nihari.jpeg" alt="Nihari image">
-    <p> <strong>Nihari</strong> is a popular Pakistani dish made with slow-cooked meat and a flavorful sauce.</p>
-  </div>
+<div class="grid_container" role="grid" aria-label="Food Recipes in Pakistan in a grid layout">
+    <section class="flex_card" role="gridcell" aria-label="Nihari recipe">
+      <header><h3 id="Nihari-title">1.Nihari</h3></header>
+        <main>
+          <img src="image/Nihari.jpeg" alt="Nihari image" >
+          <p> <strong>Nihari</strong> is a popular Pakistani dish made with slow-cooked meat and a flavorful sauce.</p>
+        </main>
+        <footer><a href="https://www.youtube.com/watch?v=KCcEKQt1-G0" target="_blank" aria-labelledby="watch Nihari-recipe on youtube">
+            <button>Nihari Recipe</button></a></footer>
+    </section>
 
-  <div class="gallery_flex_item">
-    <h3>Tikka Biryani</h3>
-    <img src="image/Lahori-Tikka-Biryani.jpg" alt="Tikka Biryani image">
-    <p><strong>Tikka Biryani</strong> is a delicious rice dish made with marinated chicken and aromatic spices.</p>    
 
-  </div>
+    <section class="flex_card" role="gridcell" aria-label="Tikka Biryani recipe in Pakistan in a flex layout">
+      <header><h3 id="Tikka-Biryani-title">2.Tikka Biryani</h3></header>
+        <main>
+          <img src="image/Lahori-Tikka-Biryani.jpg" alt="Tikka Biryani image">
+          <p><strong>Tikka Biryani</strong> is a delicious rice dish made with marinated chicken and aromatic spices.</p>
+        </main>
+      <footer><a href="https://www.youtube.com/watch?v=_TrB-_tF_E8" target="_blank" aria-labelledby="watch Tikka Biryani-recipe on youtube">
+        <button>Tikka Biryani Recipe</button></a></footer>
+    </section>
 
-  <div class="gallery_flex_item">
-    <h3>Haleem</h3>
-    <img src="image/Haleem.jpg" alt="Haleem image">
-    <p><strong>Haleem</strong> is a traditional Pakistani dish made with wheat, lentils, and meat, slow-cooked to perfection.</p>
-  </div>
+  <section class="flex_card" role="gridcell" aria-label="Haleem recipe">
+    <header><h3 id="Haleem-title">3.Haleem</h3></header>
+    <main>
+      <img src="image/Haleem.jpg" alt="Haleem image">
+      <p><strong>Haleem</strong> is a traditional Pakistani dish made with wheat, lentils, and meat, slow-cooked to perfection.</p>
+    </main>
+      <footer>
+        <a href="https://www.youtube.com/watch?v=0g2u2moEqIU" target="_blank" aria-labelledby="watch Haleem-recipe on youtube">
+          <button>Haleem Recipe</button></a>
+      </footer>
+  </section>
 
-  <div class="gallery_flex_item">
-    <h3>Kofty</h3>
-    <img src="image/Kofty.jpg" alt="Kofty image">
-    <p><strong>Kofty</strong> are delicious meatballs, often served with a rich gravy or in a biryani.</p>
-  </div>
-
+  <section class="flex_card" role="gridcell" aria-label="Kofty recipe">
+    <header><h3 id="Kofty-title">4.Kofty</h3></header>
+    <main>
+      <img src="image/Kofty.jpg" alt="Kofty image">
+      <p><strong>Kofty</strong> are delicious meatballs, often served with a rich gravy or in a biryani.</p>
+    </main>
+    <footer>
+      <a href="https://www.youtube.com/watch?v=6lER9AITv-g" target="_blank" aria-labelledby="watch Kofty-recipe on youtube">
+        <button>Kofty Recipe</button></a>
+    </footer>
+  </section>
 </div>
   <!-- grid within grid-->  
-      <div class="grid_parent">
+   <h2>More Food Recipes from Pakistan</h2>
+      <div class="grid_parent" role="grid" aria-label="Food Recipes in Pakistan in a grid layout">
+       
+    <section class="grid_child" role="gridcell" aria-label="Chapli Kebab recipe">
+        <header><h3 id="Chapli-Kebab-title">1.Chapli Kebab</h3></header>
+          <main>
+            <img  src="image/Chapli-Kebab.jpg" alt="Chapli Kebab image">
+            <p><strong>Chapli Kebab</strong> is a spicy and flavorful kebab.</p>
+          </main>
+            <footer>
+            <a href="https://www.youtube.com/watch?v=ZevdQI7u3Wo" target="_blank" aria-labelledby="watch Chapli Kebab-recipe on youtube">
+            <button>chapli Kebabs Recipe</button></a>
+            </footer>
+    </section>
+   
+   
+        <section class="grid_child">
+          <header><h3>2.Chicken Karahi</h3></header>
+          <main>
+            <img src="https://www.unileverfoodsolutions.pk/dam/global-ufs/mcos/meps/pakistan/calcmenu/recipes/PK-recipes/chicken-&-other-poultry-dishes/chicken-karahi/chicken-karahi_1260x709.jpg" alt="Chicken Karahi image">
+            <p><strong>Chicken Karahi</strong> is a flavorful Pakistani dish made with chicken cooked in a spicy tomato-based sauce.</p>
+          </main>
+          <footer>
+            <a href="https://www.youtube.com/watch?v=EaRXlnuJeVY&t=8s" target="_blank" aria-labelledby="watch Chicken Karahi-recipe on youtube">
+              <button>Chicken Karahi Recipe</button>
+            </a>
+          </footer>
+        </section>
 
-        <div class="grid_child">
-          <h3>Chapli Kebab</h3>
-          <img style="float: left; width: 100px; height: auto; margin-right: 10px;" src="image/Chapli-Kebab.jpg" alt="Chapli Kebab image">
-          <p><strong>Chapli Kebab</strong> is a spicy and flavorful keb</p>
-        <a href="https://www.youtube.com/watch?v=ZevdQI7u3Wo" target="_blank">
-        <button>Seekh Kebabs Recipe</button></a>
-        </div>
+         <section class="grid_child">
+          <header><h3>3.Chicken Biryani</h3></header>
+          <main>
+            <img src="https://authenticroyal.com/wp-content/uploads/2024/10/royal-rice-may-220461.jpg" alt="Chicken Biryani image">
+            <p><strong>Chicken Biryani</strong> is a delicious rice dish made with marinated chicken and aromatic spices.</p>
+          </main>   
+          <footer>
+            <a href="https://www.youtube.com/watch?v=3rZ9n-SZHqY" target="_blank" aria-labelledby="watch Chicken Biryani-recipe on youtube">
+              <button>Chicken Biryani Recipe</button>
+            </a>
+          </footer>
+        </section>
 
-        <div class="grid_child">
-          <h3>Seekh Kebab</h3>
-           <img src="https://ashbaber.com/wp-content/uploads/2023/03/Close-up-of-seekh-kebabs-on-plate-small.jpg" alt="Seekh Kebab image">
-          
-          <p><strong>Seekh Kebab</strong> is a popular Pakistani dish made with minced meat, shaped onto skewers, and grilled to perfection.</p>
-          <a href="https://ashbaber.com/seekh-kebabs/" target="_blank">
-        <button>Seekh Kebabs Recipe</button></a>
-        </div> 
-
-        <div class="grid_child">
-          <h3>Chicken Karahi</h3>
-          <img src="https://www.unileverfoodsolutions.pk/dam/global-ufs/mcos/meps/pakistan/calcmenu/recipes/PK-recipes/chicken-&-other-poultry-dishes/chicken-karahi/chicken-karahi_1260x709.jpg" alt="Chicken Karahi image">
-          <p><strong>Chicken Karahi</strong> is a flavorful Pakistani dish made with chicken cooked in a spicy tomato-based sauce.</p>
-          <a href="https://ashbaber.com/seekh-kebabs/" target="_blank">
-        <button>Seekh Kebabs Recipe</button></a>
-
-        </div>
-
-        <div class="grid_child">
-          <h3>Beef Biryani</h3>
-          <img src="https://kitchendiariesbyzubda.com/wp-content/uploads/2024/12/IMG_6939-min-819x1024.jpeg" alt="Beef Biryani image">
-          <p><strong>Beef Biryani</strong> is a delicious rice dish made with marinated beef and aromatic spices.</p>
-          <a href="https://www.youtube.com/watch?v=_TrB-_tF_E8" target="_blank">
-        <button>Beef Biryani Recipe</button></a>
-
-        </div>
+        <section class="grid_child">
+          <header><h3>4.Beef Biryani</h3></header>
+          <main>
+            <img src="https://kitchendiariesbyzubda.com/wp-content/uploads/2024/12/IMG_6939-min-819x1024.jpeg" alt="Beef Biryani image">
+            <p><strong>Beef Biryani</strong> is a delicious rice dish made with marinated beef and aromatic spices.</p>
+          </main>
+          <footer>
+            <a href="https://www.youtube.com/watch?v=yftv_cWbXys="_blank" aria-labelledby="watch Beef Biryani-recipe on youtube">
+              <button>Beef Biryani Recipe</button>
+            </a>
+          </footer>
+        </section>
 </body>
-
-<!-- 
-        <div class ="mycontainer">
-            <h2 style="color: #0d0d0c;">Other Food Recipes in Pakistan</h2>
-            <p style="color: black;">
-                Pakistan is known for its rich and diverse culinary heritage, offering a wide array of delicious dishes that reflect the country's cultural diversity. Some popular food recipes in Pakistan include:
-            </p>
-        </div>
-<div class="container_for_recepie">
-   <div class="box-recpie" style="background: #d18188;">
-    <h2 style="padding-bottom: 30px;">Haleem</h2>
-    <img src="image/haleem.jpg" alt="Haleem image" class="img-fluid">
-    <p>
-      A traditional dish made with wheat, lentils, and meat,
-      slow-cooked to perfection.
-    </p>
-  </div>
-
-  <div class="box-recpie" style="background: #457b9d;">
-    <h2 style="padding-bottom: 30px;">Kofty</h2>
-  
-  <img style="object-fit: cover;" src="image/kofty.jpg" alt="kofty image" class="img-fluid">
-    <p>
-      Delicious meatballs, often served with a rich gravy
-      or in a biryani.
-    </p>
-  </div>
-
-  <div class="box-recpie" style="background: #ad6aaa;">
-        
-    <h2 style="padding-bottom: 30px;">Nihari</h2>
-    <img src="image/nihari.jpeg" alt="Nihari image" class="img-fluid">
-    <p>
-      A hearty stew made with slow-cooked meat and a
-      flavorful sauce.
-    </p>
-  </div>
-
-  <div class="box-recpie" style="background: #aa8568;">
-    <h2>Chapli Kebab</h2>
-    <img src="image/chapli-kebab.jpg" alt="Chapli Kebab image" class="img-fluid">                      
-    <p>
-      A spicy and flavorful kebab made with minced meat
-      and a blend of spices.
-    </p> 
-  </div>
-  </div> --> 
-  
-    </body>
