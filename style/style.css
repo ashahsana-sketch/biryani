@@ -1,8 +1,10 @@
 * {
-    h1, h2, h3, h4, h5, h6 {
-        font-family: var(--font-heading);
-        margin: var(--spacing-lg) 0; ;
-        /* padding: var(--spacing-base) ; */
+    @media (max-width: 768px) {
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            margin: var(--spacing-lg) 0; ;
+            /* padding: var(--spacing-base) ; */
+        }
     }
     h1 {
         color: var(--primary-color);
@@ -31,11 +33,11 @@
 ul,ol,p
     {
     font-size: 1.1em;
-    color: #4a148c; /* Deep Purple */
-    background: #cbe2ea;
+    color: var(--secondary-color);
+    background: var(--secondary-border-color);
     padding: 25px 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: hsl(71, 40%, 31%) 0 4px 6px rgba(0,0,0,0.05);
     text-align: justify;
     }
 body 
@@ -61,7 +63,7 @@ nav a {
 
 }
 :is(a:hover, a:focus, a:active, a:focus-visible) {
-    background-color: var(--kitchen-color);
+    background-color: oklch(170% 40 32.);
     transition: var(--transition-slow);
 }
 /* nav a:hover {
@@ -84,13 +86,14 @@ nav a:active {
   --primary-color: purple;
   --secondary-color: darkgreen;
   --primary-border-color: #902609;
-  --secondary-border-color: #d1dc07;
+  --secondary-border-color: #a1cfcf;
   --background-color: #cbe2ea;
-  --text-color: #5e034c;
+  --text-color: lch(50% 30 300);
   --white: #ffffff;
   --gray: #0f0e0e;  
   --kitchen-color: #fc0b0b;
-  --button-color: #c0226e;
+  --button-color:oklch(60% 30 300);
+
 
   /* ===== SPACING ===== */
   --spacing-xs: 5px;
@@ -130,7 +133,7 @@ nav a:active {
   --padding-sm: 10px;
   --padding-md: 20px;
 }
-/*main header starts here */
+/*=====================main header starts here==================== */
   .main_header 
   {
     display: flex;
@@ -142,7 +145,44 @@ nav a:active {
     margin: calc(var(--spacing-lg) * 2), auto;
 
 }
-/* main header ends here */
+/*================== main header ends here================= */
+
+/*======================================
+Flex card responsive design starts here 
+*/ 
+.card_responsive_parents
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: var(--grid-gap);
+    padding: var(--spacing-lg);
+    background-color: #86e08d;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--primary-border-color);
+    margin: calc(var(--spacing-lg) * 2), auto;
+    align-items: stretch;
+}
+  .card_responsive {
+    display: block;
+    padding: var(--spacing-lg);
+    gap: var(--grid-gap);
+    align-items: center;
+    background-color: #3004f3;
+    height: stretch;
+    align-items    : stretch;
+       img {
+        width: 100%;
+    
+        }
+        p {
+        
+        height: 60rem;
+         /* flex:grow: 1; allows text to grow and fill available space */
+        
+        }
+     
+        
+  }
 
 /* flexbox card and grid in the grid containerstarts here */
 
@@ -159,6 +199,19 @@ nav a:active {
     border-radius: var(--radius-md);
     gap: var(--grid-gap);
     margin: calc(var(--spacing-lg) * 2), auto;
+    
+    @media (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+}
         
 }
 
@@ -182,6 +235,18 @@ nav a:active {
         background: transparent ;
         /* flex:grow: 1; allows text to grow and fill available space */
         }
+        @media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 }
 /* flexbox card in the grid ends here */ 
@@ -238,6 +303,23 @@ nav a:active {
     border-radius: 5px;
     cursor: pointer;
  }
+.btn[data-type="oklch"] {
+    background-color: oklch(70% 30 00);
+    transition: var(--transition-slow);
+}
+.btn[data-state="hover"]:hover {
+    background-color: contrast-color(var(--primary-color));
+}
+.btn[data-type="default"] {
+    background-color: color-mix(in oklch, var(--button-color) 80%, white);
+}
+.btn[data-type="hsl"] {
+    background-color: hsl(400, 30%, 80%);
+}
+.btn[data-="relative"] {
+    background-color: color-mix(in oklch, var(--button-color) 80%, white);
+    transition: var(--transition-slow);
+}
 
 /* for subsection of the main recpie section */
 .section-title 
