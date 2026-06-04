@@ -202,14 +202,12 @@ Flex card responsive design starts here
     gap: var(--grid-gap);
     align-items: center;
     background-color: #3004f3;
-    height: stretch;
-    align-items: stretch;
        img {
         width: 100%;
-    
         }
-        p {
-        height: auto;
+    p  {
+        display: block;
+        height: anchor-size(90%);
         }
      }
 
