@@ -1,0 +1,106 @@
+:root {
+  --card-height: 130px;
+  --card-width: calc(var(--card-height) * (6 / 4));
+}
+h1 {
+    text-align:start;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  transform: translate(
+    calc(var(--card-height) / 2 * -1),
+    calc(var(--card-height) / 2 * -1)
+  );
+}
+
+.card-1{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(315, 100%, 60%);
+  transform: rotate(-45deg);
+  transform-origin: center 120%;
+}
+.card-2{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(275, 100%, 60%);
+  transform: rotate(-30deg);
+  transform-origin: center 120%;
+}
+.card-3{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(235, 80%, 56%);
+  transform: rotate(-15deg);
+  transform-origin: center 120%;
+}
+.card-4{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(195, 80%, 56%);
+  transform: rotate(0deg);
+  transform-origin: center 120%;
+}
+.card-5{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(155, 80%, 56%);
+  transform: rotate(+15deg);
+  transform-origin: center 120%;
+}
+.card-6{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(115, 80%, 56%);
+  transform: rotate(+30deg);
+  transform-origin: center 120%;
+}
+.card-7{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(75, 80%, 56%);
+  transform: rotate(+45deg);
+  transform-origin: center 120%;
+}
+.card-8{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(35, 80%, 56%);
+  transform: rotate(+60deg);
+  transform-origin: center 120%;
+}
+.card-9{
+  width: var(--card-height);
+  height: var(--card-width);
+  position: absolute;
+
+  background-color: hsl(0, 80%, 56%);
+  transform: rotate(+75deg);
+  transform-origin: center 120%;
+}   
