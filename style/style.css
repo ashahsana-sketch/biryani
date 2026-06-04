@@ -204,10 +204,12 @@ Flex card responsive design starts here
     background-color: #3004f3;
        img {
         width: 100%;
+        margin-bottom: var(--spacing-base);
         }
     p  {
         display: block;
         height: anchor-size(90%);
+        margin-top: var(--spacing-base);
         }
      }
 
